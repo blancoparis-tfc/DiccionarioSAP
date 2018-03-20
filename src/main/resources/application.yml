@@ -1,0 +1,13 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        temp:
+          use_jdbc_metadata_defaults: false
+    database-platform:  org.hibernate.dialect.PostgreSQL95Dialect
+  datasource:
+    url:  jdbc:postgresql://localhost:5432/sap
+    username: sap
+    password: sap
