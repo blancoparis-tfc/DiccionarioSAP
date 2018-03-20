@@ -11,3 +11,12 @@ spring:
     url:  jdbc:postgresql://localhost:5432/sap
     username: sap
     password: sap
+
+
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id:  1087253594794-sbtlrc4nka9nnntsbphnein9lqe0f8tu.apps.googleusercontent.com
+            client-secret: 6oWPZ9alQNGJOKVmphftXIwR
