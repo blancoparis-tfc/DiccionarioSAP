@@ -104,3 +104,31 @@ spring.datasource.password=sap
 ```
 
 > Los dialectos : https://docs.jboss.org/hibernate/orm/5.2/javadocs/org/hibernate/dialect/package-summary.html
+
+## Configurar seguridad
+
+### Basica aouth2
+Ponemos las dependencias de configuración 
+
+```groovy
+    compile("org.springframework.security:spring-security-oauth2-client:5.0.3.RELEASE")
+    compile("org.springframework.security:spring-security-oauth2-jose:5.0.3.RELEASE")
+```
+
+Configuramos la cuenta de verificacion:
+
+```yaml
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id:  
+            client-secret: 
+```
+
+> Hay que registrarlo en google
+
+> Mirar este articulo: http://www.baeldung.com/spring-security-5-oauth2-login
+
+### Configurar la pagina de login

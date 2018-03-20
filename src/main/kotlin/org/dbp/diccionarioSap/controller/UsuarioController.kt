@@ -8,8 +8,14 @@ import java.security.Principal
 internal class UsuarioController() {
 
     @GetMapping("/")
-    fun comic(principal: Principal): String {
+    fun principal(principal: Principal): String {
         return "Usuario ${principal.name} ";
     }
 
+    data class DetalleUsuario(val usuario:String)
+
+    @GetMapping("/detalle")
+    fun detalle(principal: Principal):DetalleUsuario{
+        return DetalleUsuario(principal.name)
+    }
 }

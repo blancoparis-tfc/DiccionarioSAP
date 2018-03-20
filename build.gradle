@@ -51,8 +51,10 @@ dependencies {
 	compile("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 	compile("org.jetbrains.kotlin:kotlin-reflect")
 	compile("org.postgresql:postgresql:42.2.1")
+
     compile("org.springframework.security:spring-security-oauth2-client:5.0.3.RELEASE")
     compile("org.springframework.security:spring-security-oauth2-jose:5.0.3.RELEASE")
-	testCompile('org.springframework.boot:spring-boot-starter-test')
+
+    testCompile('org.springframework.boot:spring-boot-starter-test')
 	testCompile('org.springframework.security:spring-security-test')
 }
