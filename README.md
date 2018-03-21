@@ -130,5 +130,5 @@ Configuramos la cuenta de verificacion:
 > Hay que registrarlo en google
 
 > Mirar este articulo: http://www.baeldung.com/spring-security-5-oauth2-login
-
+> Ejemplo: https://github.com/spring-projects/spring-security/tree/5.0.3.RELEASE/samples/boot/oauth2login
 ### Configurar la pagina de login
