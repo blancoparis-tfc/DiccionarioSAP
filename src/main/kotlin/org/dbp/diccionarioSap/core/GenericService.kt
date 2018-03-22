@@ -1,6 +1,5 @@
 package org.dbp.diccionarioSap.core
 
-import org.springframework.data.crossstore.ChangeSetPersister
 import org.springframework.data.jpa.repository.JpaRepository
 import java.util.*
 
