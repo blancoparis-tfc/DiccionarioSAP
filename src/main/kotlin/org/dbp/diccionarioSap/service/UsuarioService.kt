@@ -20,14 +20,13 @@ internal interface UsuarioService: GenericService<Usuario, String, UsuarioDto> {
 @Transactional
 internal class UsuarioServiceJpaImpl (
         @Autowired val usuarioRepository:UsuarioRepository
-        , fromOfDto:GenericFromEntity<UsuarioDto,Usuario> = object: GenericFromEntity<UsuarioDto,Usuario>  {
+        ,fromOfDto:GenericFromEntity<UsuarioDto,Usuario> = object: GenericFromEntity<UsuarioDto,Usuario>  {
             override fun fromDto(dto: UsuarioDto)= Usuario.fromDto(dto)
         }   )
     :UsuarioService,
         GenericServiceImpl<Usuario, String, UsuarioDto>(
                 usuarioRepository
                 ,fromOfDto) {
-    val fromOfDto = fromOfDto
     val logger = LoggerFactory.getLogger(UsuarioServiceJpaImpl::class.java)
 
 }
